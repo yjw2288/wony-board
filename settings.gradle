@@ -1,0 +1,10 @@
+rootProject.name = 'wony-board'
+
+include(
+        "common:utils",
+        "domain:board",
+        "db-core:board-db",
+        "usecase:board-service",
+        "web:board-web-service",
+        "web:board-web-controller"
+)

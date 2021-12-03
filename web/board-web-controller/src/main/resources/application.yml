@@ -1,0 +1,8 @@
+spring.application.name: wony-board
+spring.profiles.active: local
+
+spring:
+  config:
+    import:
+      - board-db.yml
+  mvc.throw-exception-if-no-handler-found: true
