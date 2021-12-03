@@ -1,0 +1,7 @@
+dependencies {
+    implementation(project(":common:utils"))
+    implementation(project(":board:board-port"))
+    implementation(project(":board:board-operation-adapter"))
+
+    implementation("org.springframework.boot:spring-boot-starter")
+}

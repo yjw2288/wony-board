@@ -1,0 +1,10 @@
+dependencies {
+    implementation(project(":common:utils"))
+    implementation(project(":board:board-domain"))
+    implementation(project(":board:board-port"))
+    implementation(project(":board:board-operation"))
+
+    implementation 'com.querydsl:querydsl-jpa'
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter")
+}
