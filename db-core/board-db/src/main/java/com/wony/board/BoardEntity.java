@@ -18,7 +18,7 @@ import java.util.List;
 
 @Setter
 @Getter
-@ToString
+@ToString(exclude = "comments")
 @Entity
 @Table(name = "board")
 @NoArgsConstructor
