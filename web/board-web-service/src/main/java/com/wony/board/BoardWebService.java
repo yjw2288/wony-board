@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 @RequiredArgsConstructor
@@ -24,6 +25,16 @@ public class BoardWebService {
                         .contents(board.getContents())
                         .comments(fromBoardCommentDto(board.getComments()))
                         .build()).collect(Collectors.toList());
+    }
+
+    public List<BoardDto> findAllByTitle(String title) {
+        return StreamSupport.stream(boardService.findByTitle(title).spliterator(), false)
+                .map(this::fromBoard).collect(Collectors.toList());
+    }
+
+    public List<BoardDto> findByAllByTitleCustom(long boardId, String title) {
+        return boardService.findByTitleCustom(boardId, title)
+                .stream().map(this::fromBoard).collect(Collectors.toList());
     }
 
     public BoardDto findById(long id) {

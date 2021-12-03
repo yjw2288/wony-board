@@ -2,6 +2,7 @@ package com.wony.board.service;
 
 import com.wony.board.BoardEntity;
 import com.wony.board.BoardRepository;
+import com.wony.board.QBoardEntity;
 import com.wony.domain.board.Board;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,16 @@ public class BoardService {
     @Transactional(readOnly = true)
     public Optional<? extends Board> findById(long id) {
         return boardRepository.findById(id);
+    }
+
+    @Transactional(readOnly = true)
+    public Iterable<? extends Board> findByTitle(String title) {
+        return boardRepository.findAll(QBoardEntity.boardEntity.title.eq(title));
+    }
+
+    @Transactional(readOnly = true)
+    public List<? extends Board> findByTitleCustom(long boardId, String title) {
+        return boardRepository.findByTitle(boardId, title);
     }
 
     @Transactional
