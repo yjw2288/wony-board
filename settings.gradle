@@ -2,6 +2,14 @@ rootProject.name = 'wony-board'
 
 include(
         "common:utils",
+
+        "account:account-db",
+        "account:account-domain",
+        "account:account-operation",
+        "account:account-operation-port",
+        "account:account-operation-adapter",
+        "account:account-port",
+
         "board:board-db",
         "board:board-domain",
         "board:board-operation",

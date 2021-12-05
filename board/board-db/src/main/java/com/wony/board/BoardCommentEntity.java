@@ -23,4 +23,7 @@ public class BoardCommentEntity implements BoardComment {
 
     @Column(name = "contents", nullable = false)
     private String contents;
+
+    @Column(name = "accountId", nullable = false)
+    private long accountId;
 }

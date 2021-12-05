@@ -1,6 +1,6 @@
 package com.wony.board.operation.adapter;
 
-import com.wony.port.board.output.BoardCommentOutputPort;
+import com.wony.board.port.output.BoardCommentOutputPort;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

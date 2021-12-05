@@ -8,6 +8,9 @@ bootRun {
 
 dependencies {
     implementation(project(":board:board-port"))
+    implementation(project(":account:account-port"))
+
     implementation(project(":web:web-service"))
+
     implementation("org.springframework.boot:spring-boot-starter-web")
 }

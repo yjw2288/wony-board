@@ -1,4 +1,4 @@
-package com.wony.port.board.output;
+package com.wony.board.port.output;
 
 import java.util.List;
 

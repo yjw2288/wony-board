@@ -1,4 +1,4 @@
-package com.wony.port.board.input;
+package com.wony.board.port.input;
 
 public interface BoardInputPort {
     String getTitle();

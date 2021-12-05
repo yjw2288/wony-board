@@ -1,0 +1,10 @@
+dependencies {
+    implementation(project(":common:utils"))
+    implementation(project(":account:account-domain"))
+    implementation(project(":account:account-port"))
+    implementation(project(":account:account-operation"))
+
+    implementation 'com.querydsl:querydsl-jpa'
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter")
+}

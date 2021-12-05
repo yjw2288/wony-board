@@ -1,8 +1,8 @@
 package com.wony.board;
 
 import com.wony.board.operation.adapter.BoardAdapter;
-import com.wony.port.board.input.BoardInputPort;
-import com.wony.port.board.output.BoardOutputPort;
+import com.wony.board.port.input.BoardInputPort;
+import com.wony.board.port.output.BoardOutputPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

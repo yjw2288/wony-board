@@ -1,11 +1,11 @@
 package com.wony.board.operation.adapter;
 
 import com.wony.board.operation.BoardService;
+import com.wony.board.port.input.BoardInputPort;
+import com.wony.board.port.output.BoardCommentOutputPort;
+import com.wony.board.port.output.BoardOutputPort;
 import com.wony.domain.board.Board;
 import com.wony.domain.board.BoardComment;
-import com.wony.port.board.input.BoardInputPort;
-import com.wony.port.board.output.BoardCommentOutputPort;
-import com.wony.port.board.output.BoardOutputPort;
 import com.wony.util.WonyStreamUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
