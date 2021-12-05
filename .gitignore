@@ -4,6 +4,8 @@ build/
 **/src/main/resources/static/docs/*.html
 !gradle/wrapper/gradle-wrapper.jar
 **/src/querydsl/**
+**/.DS_Store
+**/.DS_Store/**
 
 ### STS ###
 .apt_generated
