@@ -76,6 +76,7 @@ public class BoardController {
       adapter 에서 처리.
 5. Port
     * adpater 를 통해 외부에 노출된다.
+    * 모듈끼리는 adapter 를 이용, port 를 주고받으며 통신을 한다.
     * 이 모듈도 외부 노출의 부작용을 최소화 하기 위해 인터페이스로만 만든다.
     * 모듈 외부로 나가는 데이터 output 과, 모듈 내부로 들어오는 데이터인 input 으로 구성되어있다.
 
