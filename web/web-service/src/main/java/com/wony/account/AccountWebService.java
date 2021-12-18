@@ -1,6 +1,5 @@
-package con.wony.account;
+package com.wony.account;
 
-import com.wony.account.AccountAdapter;
 import com.wony.account.port.output.AccountJoinInputPort;
 import com.wony.account.port.output.AccountOutputPort;
 import lombok.RequiredArgsConstructor;

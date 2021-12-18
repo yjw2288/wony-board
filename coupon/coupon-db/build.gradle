@@ -1,6 +1,7 @@
 dependencies {
-    implementation(project(":common:db-config"))
-    implementation(project(":board:board-domain"))
+    runtimeOnly("com.h2database:h2")
+
+    implementation(project(":coupon:coupon-domain"))
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
     implementation 'com.querydsl:querydsl-jpa'

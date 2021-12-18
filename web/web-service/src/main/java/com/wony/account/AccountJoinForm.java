@@ -1,4 +1,4 @@
-package con.wony.account;
+package com.wony.account;
 
 import com.wony.account.port.output.AccountJoinInputPort;
 import lombok.Getter;
